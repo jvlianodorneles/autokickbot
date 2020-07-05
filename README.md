@@ -1,12 +1,12 @@
 To run this bot clone this repository and create a file `.env` following `.env_sample` replacing the dummy token with the token provided by @botfather.
 
-### 🇺🇸 Use this bot to collectively evaluate suggestions made in your group
+### 🇺🇸 This bot just kick people from the chat, nothing more
 
 *How it works*: promote it as an administrator in your group. Any member who joins from that moment on will be automatically kicked.
 
 * * * * *
 
-### 🇧🇷 This bot just kick people from the chat, nothing more
+### 🇧🇷 Este bot apenas expulsa membros do grupo, nada mais
 
 *Como ele funciona*: promova-o como administrador no seu grupo. Qualquer Qualquer membro que entrar a partir desse momento será automaticamente expulso.
 
