@@ -11,6 +11,7 @@ To run this bot clone this repository and create a file `.env` following `.env_s
 *Como ele funciona*: promova-o como administrador no seu grupo. Qualquer Qualquer membro que entrar a partir desse momento será automaticamente expulso.
 
 * * * * *
-🇺🇸 ️If you liked this bot, how about [to buy me a coffee](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AUJW6TVC8KVTQ) (PayPal)?
 
-🇧🇷 ️Se você gostou deste bot, que tal [me pagar um café](https://picpay.me/jvlianodorneles) (PicPay)?
+🇺🇸 ️If you liked this bot, how about [to buy me a coffee](https://t.me/umcafebot)?
+
+🇧🇷 ️Se você gostou deste bot, que tal [me pagar um café](https://t.me/umcafebot)?
