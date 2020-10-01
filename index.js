@@ -12,9 +12,9 @@ bot.command('start', ctx => {
 
 function sendStartMessage(ctx) {
   let startMessage = `
-Esse bot apenas expulsa as pessoas do chat, nada mais.
+🇺🇸 How this bot works: promote it to your group administrator. Anyone who joins the group from that moment on will be automatically kicked out.
 
-Se você gostou dele, que tal me pagar um café? Utilize os botões abaixo.
+🇧🇷 Como este bot funciona: promova-o a administrador do seu grupo. Qualquer pessoa que entrar no grupo a partir desse momento será automaticamente expulso.
 
 *❤️ Suporte o desenvolvedor*`;
   
