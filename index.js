@@ -6,6 +6,35 @@ const bot = new telegraf(process.env.TOKEN);
 
 bot.catch(console.log);
 
+const invoice = {
+  provider_token: process.env.PROVIDER_TOKEN,
+  start_parameter: 'doacao',
+  title: 'Doação',
+  description: '❤️ Suporte o desenvolvimento do @autokick_bot.',
+  currency: 'BRL',
+  photo_url: 'https://image.freepik.com/free-icon/kick-boot_318-1645.jpg',
+//  is_flexible: false,
+  prices: [
+    { label: 'Doação', amount: 1000 }
+  ],
+  payload: {
+    coupon: 'DICASTELEGRAM'
+  }
+}
+
+const shippingOptions = [
+  {
+    id: 'frete_gratis',
+    title: 'Frete',
+    prices: [{ label: 'Não precisa de frete', amount: 0 }]
+  }
+]
+
+const replyOptions = Markup.inlineKeyboard([
+  Markup.payButton('Doar R$ 10,00'),
+//  Markup.urlButton('GitHub', 'https://github.com/jvlianodorneles/autokickbot')
+]).extra()
+
 bot.command('start', ctx => {
   sendStartMessage(ctx);
 })
@@ -24,7 +53,8 @@ function sendStartMessage(ctx) {
         inline_keyboard: [
           [
             { text: "🇧🇷 PicPay", url: 'https://picpay.me/jvlianodorneles' },
-            { text: "🇺🇸 PayPal", url: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AUJW6TVC8KVTQ' }
+            { text: "🇺🇸 PayPal", url: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AUJW6TVC8KVTQ' },
+            { text: "💳 Telegram", callback_data: 'doar' }
           ]
         ]
       },
@@ -38,5 +68,9 @@ bot.on('new_chat_members', (ctx) => {
     const userId = ctx.from.id;
     bot.telegram.unbanChatMember(chatId, userId);
 });
+
+bot.action('doar', ({ replyWithInvoice }) => replyWithInvoice(invoice, replyOptions))
+bot.on('pre_checkout_query', ({ answerPreCheckoutQuery }) => answerPreCheckoutQuery(true))
+bot.on('successful_payment', () => console.log('Woohoo'))
 
 bot.launch();
