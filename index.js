@@ -41,9 +41,9 @@ bot.command('start', ctx => {
 
 function sendStartMessage(ctx) {
   let startMessage = `
-🇺🇸 How this bot works: promote it to your group administrator. Anyone who joins the group from that moment on will be automatically kicked out.
+🇺🇸 How this bot works: promote it to your group administrator. Anyone who try to join the group from that moment on will be automatically kicked out.
 
-🇧🇷 Como este bot funciona: promova-o a administrador do seu grupo. Qualquer pessoa que entrar no grupo a partir desse momento será automaticamente expulso.
+🇧🇷 Como este bot funciona: promova-o a administrador do seu grupo. Qualquer pessoa que tentar entrar no grupo a partir desse momento será automaticamente expulso.
 
 *❤️ Suporte o desenvolvedor*`;
   
