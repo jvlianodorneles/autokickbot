@@ -1,0 +1,25 @@
+{
+  "name": "autokickbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "telegraf": "^3.38.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvlianodorneles/autokickbot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jvlianodorneles/autokickbot/issues"
+  },
+  "homepage": "https://github.com/jvlianodorneles/autokickbot#readme"
+}
